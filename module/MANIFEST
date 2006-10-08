@@ -14,4 +14,6 @@ t/02cancelled.t
 t/input/cancelled_trace.txt
 t/input/onetrace.txt
 t/input/twotraces.txt
+t/pod-coverage.t
+t/pod.t
 t/scripts/script1.pl
