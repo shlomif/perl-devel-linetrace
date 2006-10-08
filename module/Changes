@@ -1,4 +1,4 @@
-0.1.6 [[[FILL IN DATE]]]
+0.1.6    Sun Oct  8 19:44:25 IST 2006
     - converted the build system to Build.PL with a traditional Makefile.PL.
     - added a BSD license meta-data.
     - added the examples directory with an example.
