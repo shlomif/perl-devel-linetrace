@@ -1,5 +1,9 @@
 package Devel::LineTrace;
 
+use strict;
+use warnings;
+
+use vars (qw($VERSION));
 $VERSION = '0.1.5';
 
 =head1 NAME
@@ -50,12 +54,14 @@ Shlomi Fish E<lt>shlomif@vipe.technion.ac.ilE<gt>
 
 package DB;
 
+
 my (%files);
 sub BEGIN
 {
     local (*I);
     my $filename = $ENV{'PERL5DB_LT'} || "perl-line-traces.txt";
-    open I, "<$filename";
+    open I, "<", $filename
+        or return;
     my $line;
     $line = <I>;
     while($line)
@@ -85,6 +91,8 @@ sub BEGIN
     }
     close(I);
 }
+
+use vars qw(@saved $package $filename $line $usercontext);
 
 sub DB
 {
