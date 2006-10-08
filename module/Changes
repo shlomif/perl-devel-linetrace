@@ -1,0 +1,3 @@
+0.1.6 [[[FILL IN DATE]]]
+    - converted the build system to Build.PL with a traditional Makefile.PL.
+    - added a BSD license meta-data.
