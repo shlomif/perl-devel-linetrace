@@ -1,12 +1,14 @@
-MANIFEST
+Build.PL
 COPYING
+inc/Test/Run/Builder.pm
 INSTALL
-README
-Makefile.PL
 lib/Devel/LineTrace.pm
+Makefile.PL
+MANIFEST
 META.yml                                Module meta-data (added by MakeMaker)
-t/01twotraces.t
+README
 t/00onetrace.t
+t/01twotraces.t
 t/02cancelled.t
 t/input/cancelled_trace.txt
 t/input/onetrace.txt

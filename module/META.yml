@@ -1,9 +1,19 @@
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Devel-LineTrace
-version:      0.1.5
-version_from: lib/Devel/LineTrace.pm
-installdirs:  site
-requires:
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.10_08
+---
+name: Devel-LineTrace
+version: 0.1.5
+author:
+  - 'Shlomi Fish E<lt>shlomif@vipe.technion.ac.ilE<gt>'
+abstract: Apply traces to individual lines.
+license: bsd
+resources:
+  license: http://www.opensource.org/licenses/bsd-license.php
+provides:
+  DB:
+    file: lib/Devel/LineTrace.pm
+  Devel::LineTrace:
+    file: lib/Devel/LineTrace.pm
+    version: 0.1.5
+generated_by: Module::Build version 0.2805
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
