@@ -1,3 +1,6 @@
 0.1.6 [[[FILL IN DATE]]]
     - converted the build system to Build.PL with a traditional Makefile.PL.
     - added a BSD license meta-data.
+    - added the examples directory with an example.
+    - added pod.t and pod-coverage.t
+    - added use strict and use warnings
