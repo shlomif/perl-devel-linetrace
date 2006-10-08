@@ -10,6 +10,7 @@ my $build = Test::Run::Builder->new(
     module_name => "Devel::LineTrace",
     dist_version_from => "lib/Devel/LineTrace.pm",
     license => "bsd",
+    create_makefile_pl => 'traditional',
 );
 
 $build->create_build_script;
