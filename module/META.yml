@@ -1,19 +1,25 @@
 ---
+abstract: 'Apply traces to individual lines.'
+author: []
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3617'
+keywords:
+  - debug
+  - devel
+  - trace
+  - line
+  - callback
+license: mit
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Devel-LineTrace
-version: 0.1.6
-author:
-  - 'Shlomi Fish E<lt>shlomif@vipe.technion.ac.ilE<gt>'
-abstract: Apply traces to individual lines.
-license: bsd
-resources:
-  license: http://www.opensource.org/licenses/bsd-license.php
 provides:
-  DB:
-    file: lib/Devel/LineTrace.pm
   Devel::LineTrace:
     file: lib/Devel/LineTrace.pm
-    version: 0.1.6
-generated_by: Module::Build version 0.2805
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    version: v0.1.7
+resources:
+  license: http://www.opensource.org/licenses/mit-license.php
+  repository: http://svn.berlios.de/svnroot/repos/web-cpan/Devel-LineTrace/
+version: v0.1.7
