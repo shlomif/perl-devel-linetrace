@@ -1,11 +1,12 @@
 At the command-line, type:
 
-perl Makefile.PL
-make
+perl Build.PL
+./Build
+./Build test
 
 To prepare the package for installation and then:
 
-make install
+./Build install
 
 to install it.
 
