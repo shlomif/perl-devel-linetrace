@@ -22,8 +22,12 @@ name: Devel-LineTrace
 provides:
   Devel::LineTrace:
     file: lib/Devel/LineTrace.pm
-    version: v0.1.7
+    version: v0.1.8
+requires:
+  strict: 0
+  vars: 0
+  warnings: 0
 resources:
   license: http://opensource.org/licenses/mit-license.php
   repository: http://svn.berlios.de/svnroot/repos/web-cpan/Devel-LineTrace/
-version: v0.1.7
+version: v0.1.8
