@@ -1,5 +1,6 @@
     - Convert the t/*.t files to use $^X, -Mblib, Test::More::is() and
     "use warnings;" instead of "-w".
+        - http://www.cpantesters.org/cpan/report/86ddf582-b16c-11e0-a3fe-07d50acc717f
 
 0.1.6    Sun Oct  8 19:44:25 IST 2006
     - converted the build system to Build.PL with a traditional Makefile.PL.
