@@ -1,14 +1,16 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 use strict;
+use warnings;
 
 use Test::More tests => 1;
 
 $ENV{'PERL5DB_LT'} = "t/input/cancelled_trace.txt";
 
-my $output = `perl -d:LineTrace t/scripts/script1.pl`;
+my $output = `$^X -Mblib -d:LineTrace t/scripts/script1.pl`;
 
-ok($output eq "\$i=5\n\$j=150\n");
+# TEST
+is ($output, "\$i=5\n\$j=150\n", 'Cancelled',);
 
 =head1 COPYRIGHT & LICENSE
 

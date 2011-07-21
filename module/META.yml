@@ -1,6 +1,10 @@
 ---
 abstract: 'Apply traces to individual lines.'
 author: []
+build_requires:
+  Test::More: 0
+  strict: 0
+  warnings: 0
 configure_requires:
   Module::Build: 0.36
 generated_by: 'Module::Build version 0.3617'
@@ -20,6 +24,6 @@ provides:
     file: lib/Devel/LineTrace.pm
     version: v0.1.7
 resources:
-  license: http://www.opensource.org/licenses/mit-license.php
+  license: http://opensource.org/licenses/mit-license.php
   repository: http://svn.berlios.de/svnroot/repos/web-cpan/Devel-LineTrace/
 version: v0.1.7
