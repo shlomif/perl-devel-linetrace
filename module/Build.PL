@@ -15,6 +15,12 @@ my $build = Test::Run::Builder->new(
     {
         'Module::Build' => 0.36,
     },
+    requires =>
+    {
+        'strict' => 0,
+        'vars' => 0,
+        'warnings' => 0,
+    },
     build_requires =>
     {
         'Test::More' => 0,
