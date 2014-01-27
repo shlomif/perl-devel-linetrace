@@ -1,13 +1,15 @@
 ---
 abstract: 'Apply traces to individual lines.'
-author: []
+author:
+  - unknown
 build_requires:
   Test::More: 0
   strict: 0
   warnings: 0
 configure_requires:
   Module::Build: 0.36
-generated_by: 'Module::Build version 0.3617'
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 keywords:
   - debug
   - devel
@@ -24,10 +26,11 @@ provides:
     file: lib/Devel/LineTrace.pm
     version: v0.1.8
 requires:
+  perl: 5.006
   strict: 0
   vars: 0
   warnings: 0
 resources:
-  license: http://opensource.org/licenses/mit-license.php
+  license: http://www.opensource.org/licenses/mit-license.php
   repository: http://svn.berlios.de/svnroot/repos/web-cpan/Devel-LineTrace/
 version: v0.1.8

@@ -17,6 +17,7 @@ my $build = Test::Run::Builder->new(
     },
     requires =>
     {
+        'perl' => '5.006',
         'strict' => 0,
         'vars' => 0,
         'warnings' => 0,

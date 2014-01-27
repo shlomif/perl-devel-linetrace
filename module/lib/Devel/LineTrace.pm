@@ -3,6 +3,8 @@ package Devel::LineTrace;
 use strict;
 use warnings;
 
+require 5.006;
+
 use vars (qw($VERSION));
 $VERSION = '0.1.8';
 

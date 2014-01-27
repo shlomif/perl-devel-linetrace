@@ -19,3 +19,4 @@ t/input/twotraces.txt
 t/pod-coverage.t
 t/pod.t
 t/scripts/script1.pl
+META.json
