@@ -6,7 +6,7 @@ use warnings;
 require 5.006;
 
 use vars (qw($VERSION));
-$VERSION = '0.1.8';
+$VERSION = '0.1.9';
 
 package DB;
 
