@@ -14,25 +14,26 @@ package DB;
 my (%files);
 sub BEGIN
 {
-    local (*I);
     my $filename = $ENV{'PERL5DB_LT'} || "perl-line-traces.txt";
-    open I, "<", $filename
+    open my $in_fh, "<", $filename
         or return;
     my $line;
-    $line = <I>;
-    while($line)
+    $line = <$in_fh>;
+    MAIN:
+    while ($line)
     {
         chomp $line;
         if (($line =~ /^\s+/) || ($line =~ /^#/))
         {
-            $line = <I>;
-            next;
+            $line = <$in_fh>;
+            next MAIN;
         }
         $line =~ /^(.+):(\d+)$/;
         my $filename = $1;
         my $line_num = $2;
         my $callback = "";
-        while ($line = <I>)
+        CALLBACK:
+        while ($line = <$in_fh>)
         {
             if ($line =~ /^\s/)
             {
@@ -40,12 +41,14 @@ sub BEGIN
             }
             else
             {
-                last;
+                last CALLBACK;
             }
         }
         $files{$filename}{$line_num} = $callback;
     }
-    close(I);
+    close ($in_fh);
+
+    return;
 }
 
 use vars qw(@saved $package $filename $line $usercontext);
