@@ -32,5 +32,5 @@ requires:
   warnings: 0
 resources:
   license: http://www.opensource.org/licenses/mit-license.php
-  repository: http://svn.berlios.de/svnroot/repos/web-cpan/Devel-LineTrace/
+  repository: https://bitbucket.org/shlomif/perl-devel-linetrace
 version: v0.1.8

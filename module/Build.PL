@@ -32,7 +32,7 @@ my $build = Test::Run::Builder->new(
     {
         resources =>
         {
-            repository => "http://svn.berlios.de/svnroot/repos/web-cpan/Devel-LineTrace/",
+            repository => "https://bitbucket.org/shlomif/perl-devel-linetrace",
         },
         keywords =>
         [
