@@ -2,6 +2,7 @@
     - Minimal version of perl in module and META.yml.
          - For CPANTS Kwalitee.
     - Add t/style-trailing-space.t and t/cpan-changes.t.
+    - Add a LICENSE file (For CPANTS Kwalitee).
 
 0.1.8   2011-07-21
     - Convert the t/*.t files to use $^X, -Mblib, Test::More::is() and
