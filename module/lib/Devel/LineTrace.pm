@@ -75,7 +75,7 @@ Devel::LineTrace - Apply traces to individual lines.
 =head1 DESCRIPTION
 
 This is a class that enables assigning Perl code callbacks to certain
-lines in the original code B<without modifying it>. 
+lines in the original code B<without modifying it>.
 
 To do so prepare a file with the following syntax:
 
@@ -90,14 +90,14 @@ To do so prepare a file with the following syntax:
 
 Which will assign the [CODE] blocks to the filename and line combinations.
 The [CODE] sections are indented from the main blocks. To temporarily cancel
-a callback put a pound-sign (#) right at the start of the line (without 
+a callback put a pound-sign (#) right at the start of the line (without
 whitespace beforehand).
 
-The location of the file should be specified by the PERL5DB_LT environment 
+The location of the file should be specified by the PERL5DB_LT environment
 variable (or else it defaults to C<perl-line-traces.txt>.)
 
 Then invoke the perl interpreter like this:
-   
+
     perl -d:LineTrace myprogram.pl
 
 =head1 SEE ALSO

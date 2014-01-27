@@ -1,22 +1,24 @@
 Build.PL
-Changes
 COPYING
+Changes
+INSTALL
+MANIFEST
+META.json
+META.yml                                Module meta-data (added by MakeMaker)
+Makefile.PL
+README
 examples/perl-line-traces.txt
 examples/test.pl
 inc/Test/Run/Builder.pm
-INSTALL
 lib/Devel/LineTrace.pm
-Makefile.PL
-MANIFEST
-META.yml                                Module meta-data (added by MakeMaker)
-README
 t/00onetrace.t
 t/01twotraces.t
 t/02cancelled.t
+t/cpan-changes.t
 t/input/cancelled_trace.txt
 t/input/onetrace.txt
 t/input/twotraces.txt
 t/pod-coverage.t
 t/pod.t
 t/scripts/script1.pl
-META.json
+t/style-trailing-space.t
