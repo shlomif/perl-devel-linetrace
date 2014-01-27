@@ -1,0 +1,7 @@
+module/Build
+module/Devel-LineTrace-*
+module/META.json
+module/MYMETA.json
+module/MYMETA.yml
+module/Makefile.PL
+module/_build
