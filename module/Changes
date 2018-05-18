@@ -1,3 +1,6 @@
+0.1.10  2018-05-18
+    - Convert to Dist-Zilla .
+
 0.1.9   2014-01-27
     - Minimal version of perl in module and META.yml.
          - For CPANTS Kwalitee.
