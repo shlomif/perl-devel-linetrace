@@ -5,13 +5,10 @@ use warnings;
 
 require 5.006;
 
-use vars (qw($VERSION));
-$VERSION = '0.1.9';
-
 package DB;
 
-
 my (%files);
+
 sub BEGIN
 {
     my $filename = $ENV{'PERL5DB_LT'} || "perl-line-traces.txt";
@@ -19,11 +16,11 @@ sub BEGIN
         or return;
     my $line;
     $line = <$in_fh>;
-    MAIN:
+MAIN:
     while ($line)
     {
         chomp $line;
-        if (($line =~ /^\s+/) || ($line =~ /^#/))
+        if ( ( $line =~ /^\s+/ ) || ( $line =~ /^#/ ) )
         {
             $line = <$in_fh>;
             next MAIN;
@@ -32,10 +29,11 @@ sub BEGIN
         my $filename = $1;
         my $line_num = $2;
         my $callback = "";
-        CALLBACK:
-        while ($line = <$in_fh>)
+    CALLBACK:
+        while ( $line = <$in_fh> )
         {
-            if ($line =~ /^\s/)
+
+            if ( $line =~ /^\s/ )
             {
                 $callback .= $line;
             }
@@ -46,7 +44,7 @@ sub BEGIN
         }
         $files{$filename}{$line_num} = $callback;
     }
-    close ($in_fh);
+    close($in_fh);
 
     return;
 }
@@ -55,11 +53,11 @@ use vars qw(@saved $package $filename $line $usercontext);
 
 sub DB
 {
-    local @saved = ($@, $!, $^E, $,, $/, $\, $^W);
-    local($package, $filename, $line) = caller;
-    local $usercontext = '($@, $!, $^E, $,, $/, $\, $^W) = @saved;' .
-      "package $package;";	# this won't let them modify, alas
-    if (exists($files{$filename}{$line}))
+    local @saved = ( $@, $!, $^E, $,, $/, $\, $^W );
+    local ( $package, $filename, $line ) = caller;
+    local $usercontext = '($@, $!, $^E, $,, $/, $\, $^W) = @saved;'
+        . "package $package;";    # this won't let them modify, alas
+    if ( exists( $files{$filename}{$line} ) )
     {
         eval $usercontext . " " . $files{$filename}{$line};
     }

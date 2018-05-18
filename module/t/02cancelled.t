@@ -10,7 +10,7 @@ $ENV{'PERL5DB_LT'} = "t/input/cancelled_trace.txt";
 my $output = `$^X -Mblib -d:LineTrace t/scripts/script1.pl`;
 
 # TEST
-is ($output, "\$i=5\n\$j=150\n", 'Cancelled',);
+is( $output, "\$i=5\n\$j=150\n", 'Cancelled', );
 
 =head1 COPYRIGHT & LICENSE
 

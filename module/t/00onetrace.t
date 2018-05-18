@@ -10,7 +10,7 @@ $ENV{'PERL5DB_LT'} = "t/input/onetrace.txt";
 my $output = `$^X -Mblib -d:LineTrace t/scripts/script1.pl`;
 
 # TEST
-is ($output, "\$i=5\n", 'One trace');
+is( $output, "\$i=5\n", 'One trace' );
 
 =head1 COPYRIGHT & LICENSE
 

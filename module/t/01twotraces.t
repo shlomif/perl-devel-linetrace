@@ -10,7 +10,7 @@ $ENV{'PERL5DB_LT'} = "t/input/twotraces.txt";
 my $output = `$^X -Mblib -d:LineTrace t/scripts/script1.pl`;
 
 # TEST
-is ($output, "\$i=5\n\$j=150\n", 'Two traces');
+is( $output, "\$i=5\n\$j=150\n", 'Two traces' );
 
 =head1 COPYRIGHT & LICENSE
 
