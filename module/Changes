@@ -1,3 +1,6 @@
+0.1.11  2019-08-23
+    - Now at https://github.com/shlomif/perl-devel-linetrace .
+
 0.1.10  2018-05-18
     - Convert to Dist-Zilla .
 
