@@ -3,7 +3,7 @@ package Devel::LineTrace;
 use strict;
 use warnings;
 
-require 5.006;
+require 5.014;
 
 package DB;
 
@@ -59,6 +59,7 @@ sub DB
         . "package $package;";    # this won't let them modify, alas
     if ( exists( $files{$filename}{$line} ) )
     {
+        ## no critic
         eval $usercontext . " " . $files{$filename}{$line};
     }
 }
